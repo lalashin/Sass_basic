@@ -1,3 +1,12 @@
+.visual { background: pink; width: 100%; height: 300px; }
+.visual div { background: rgba(0, 0, 0, 0.5); height: 300px; }
 
+.main { background: purple; height: 500px; }
+.main div { background: rgba(0, 0, 0, 0.5); height: 500px; }
+
+.footer { background: blue; height: 150px; }
+.footer div { background: rgba(0, 0, 0, 0.5); height: 150px; }
+
+.visual div, .main div, .footer div { width: 1200px; margin: 0 auto; }
 
 /*# sourceMappingURL=index8.css.map */

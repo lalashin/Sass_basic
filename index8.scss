@@ -1,1 +1,19 @@
-%name {font-size: 14px; color: blue;}
+// %name {font-size: 14px; color: blue;}
+// .fs20{font-size: 20px;}
+// @mixin name($bold, $color) {font-weight: $bold; background: $color;}
+
+// .a {@extend %name; @include name(bold, gray);}
+// .b {@extend .fs20;}
+// .c {@extend %name;}
+
+.visual {background: pink; width: 100%; height: 300px;
+    div { @extend %m0auto; background: rgba(0,0,0,.5); height:300px;}
+}
+.main {background:purple; height: 500px;
+    div {@extend %m0auto;background: rgba(0,0,0,.5); height:500px;}
+}
+.footer { background: blue; height: 150px;
+    div {@extend %m0auto;background: rgba(0,0,0,.5); height:150px;}
+}
+
+%m0auto {width: 1200px; margin: 0 auto;  }
