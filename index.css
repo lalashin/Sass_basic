@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*
+여러줄 주석
+SCSS와 css 공통 사용 주석
+*/
+.a { color: red; }
+.a ul { border: 1px solid red; }
+.a ul > li { background: pink; }
+.a ul > li a { text-decoration: none; }
+.a ul > li a:hover { color: red; }
+.a ul > li a.bbb { font-size: 11px; }
+.a ul > li .bbb { padding-left: 10px; }
+.a ul > li:last-child { border: 1px dotted yellow; }
+
+/*# sourceMappingURL=index.css.map */

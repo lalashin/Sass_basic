@@ -1,0 +1,6 @@
+//$는 변수, mixin은 함수, include는 함수호출 
+@mixin box($w, $h){
+    width:$w; height:$h;
+}
+
+div{@include box(300px, 100px); border: 1px solid blue;}

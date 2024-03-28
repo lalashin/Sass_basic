@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+
+.list li {
+    text-indent: 10px;
+    background: no-repeat 0 5px;
+    background-size: 8px auto;  
+}
+// 원하는 숫자에서 +1
+@for $i from 1 to 6 {
+    .list li.ico#{$i} { background-image: url(images/ico_0#{$i}.png) ;}
+    .list li:nth-child(#{$i})::before {content: '제목#{$i}';}
+}

@@ -1,0 +1,31 @@
+//주석
+//한줄주석은 SCSS에서만 사용하는 주석, css에서 나타나지 않음
+
+/*
+여러줄 주석
+SCSS와 css 공통 사용 주석
+*/
+
+//변수 
+//영문
+//영문+ _숫자
+//대소문자  
+
+//@mixin = @keyframe ani{}
+//@include = animation-name:ani
+
+.a { color: red; 
+    ul {border: 1px solid red;
+        > li {background: pink;
+            a {text-decoration: none;
+                &:hover{color:red}
+                &.bbb {font-size: 11px;} 
+            }
+        .bbb{padding-left: 10px;}
+        &:last-child { border:1px dotted yellow;}
+ 
+        }
+        
+       
+    }
+}
