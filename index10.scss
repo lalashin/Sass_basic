@@ -1,0 +1,42 @@
+@mixin clear{
+    &:after {content: ''; display: block; clear: both;}
+}
+
+
+// .a {border:1px solid red; background: red;
+//     @include clear;
+//    > div {float: left;}
+// }
+
+@mixin ellipse($w) {overflow: hidden; display: block; 
+    width: $w;
+    text-overflow: ellipsis; white-space: nowrap;}
+
+@mixin ellipse2($line, $w, $h) { overflow: hidden; display: -webkit-box; 
+    -webkit-line-clamp: $line;
+    width: $w;
+    height: $h; -webkit-box-orient:vertical;text-overflow: ellipsis;
+}
+
+.a {@include ellipse(150px); }
+.b {@include ellipse2(3, 100px, 60px)}
+
+
+// @mixin box-center($w) {position: absolute; left: 50%; top: 50%; width:$w; transform: translate(-50%,-50%);}
+
+// div {@include box-center(500px); height: 200px; border: 1px solid red; }
+// div {position: absolute; width: 300px; height: 300px; border: 1px solid red; left:50%;
+// top:50%; transform: translate(-50%, -50%);}
+
+@mixin position($x, $y, $z, $w) {position: absolute; left: $x; top: $y; z-index: $z; width: $w; 
+    @if
+    $x == 50% and $y == 50% {
+        transform: translate(-50%, -50%);
+    } @else if $y == 50% {
+        transform: translateY(-50%);
+    }@else if $x == 50%{
+        transform: translateX(-50%);
+    }
+}
+
+div {@include position(50%, 50%, 2, 500px);height: 300px; border: 1px solid red;}

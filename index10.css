@@ -1,0 +1,7 @@
+.a { overflow: hidden; display: block; width: 150px; text-overflow: ellipsis; white-space: nowrap; }
+
+.b { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; width: 100px; height: 60px; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+
+div { position: absolute; left: 50%; top: 50%; z-index: 2; width: 500px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); height: 300px; border: 1px solid red; }
+
+/*# sourceMappingURL=index10.css.map */
